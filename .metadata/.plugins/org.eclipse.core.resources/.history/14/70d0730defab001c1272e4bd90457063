@@ -1,0 +1,50 @@
+package geometria;
+
+public class Triangulo {
+
+	// Atributos
+	private double base;
+	private double altura;
+
+	// Métodos
+	public void setBase(double base) {
+		if (base > 0) {
+			this.base = base;
+		}
+	}
+
+	public void setAltura(double altura) {
+		if (altura > 0) {
+			this.altura = altura;
+		}
+	}
+
+	public double calculaArea() {
+		double area = (base * altura) / 2;
+
+		return area;
+	}
+	
+	// Esta função desenha um triângulo (pirâmide)
+	// Para isso, devemos saber o número de pontos a ser utilizado na base,
+	// multiplicar por dois (porque o triângulo está centralizado,
+	// formando dois triângulos, um de cada lado, que será preenchido por espaços vazios) e subtraído 2
+	// (os pontos da base que fazem parte dos triângulos laterais)
+	// Para preencher os espaços vazios, após cada linha o valor total de espaços deve ser subtraído em uma unidade,
+	// pois, a cada linha, o triângulo aumenta (preenche)
+	// Após os espaços à esquerda, o triângulo é preenchido horizontalmente, de acordo com o valor de i (que aumenta a cada loop)
+	public void desenhar() {
+		double espacos = base  - 2;
+		
+		for (double i = 0; i < base; i++) {
+			for (double j = 0; j < espacos; j++) {
+				System.out.print(" ");
+			}
+			espacos = espacos - 1;
+			for (double j = 0; j <= i; j++) {
+				System.out.print(". ");
+			}
+			System.out.println();
+		}
+	}
+}

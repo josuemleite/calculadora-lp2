@@ -1,0 +1,24 @@
+package geometria;
+
+public class Circulo {
+
+	// Atributos
+	private double raio;
+	
+	// Métodos
+	public void setRaio(double raio) {
+		if (raio > 0) {
+			this.raio = raio;
+		}
+	}
+	
+	public double calculaArea() {
+		double area = 3.14 * raio * raio;
+		
+		return area;
+	}
+	
+	public void desenhar() {
+		
+	}
+}

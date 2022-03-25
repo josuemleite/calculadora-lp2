@@ -1,0 +1,55 @@
+package geometria;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		// Teste da classe Quadrado
+		Quadrado primeiroQuadrado = new Quadrado();
+		primeiroQuadrado.setLado(6);
+
+		double areaPrimeiroQuadrado = primeiroQuadrado.calculaArea();
+		System.out.println("Área quadrado: " + areaPrimeiroQuadrado);
+
+		System.out.println("Desenho quadrado: ");
+		primeiroQuadrado.desenhar();
+		
+		System.out.println("-------------------------------------------------");
+
+		// Teste da classe Retangulo
+		Retangulo primeiroRetangulo = new Retangulo();
+		primeiroRetangulo.setBase(12);
+		primeiroRetangulo.setAltura(6);
+
+		double areaPrimeiroRetangulo = primeiroRetangulo.calculaArea();
+		System.out.println("Área retângulo: " + areaPrimeiroRetangulo);
+
+		System.out.println("Desenho retângulo: ");
+		primeiroRetangulo.desenhar();
+		
+		System.out.println("-------------------------------------------------");
+
+		// Teste da classe Circulo
+		Circulo primeiroCirculo = new Circulo();
+		primeiroCirculo.setRaio(4);
+
+		double areaPrimeiroCirculo = primeiroCirculo.calculaArea();
+		System.out.println("Área círculo: " + areaPrimeiroCirculo);
+		
+		System.out.println("Desenho círculo: ");
+		primeiroCirculo.desenhar();
+		
+		System.out.println("-------------------------------------------------");
+
+		// Teste da classe Retangulo
+		Triangulo primeiroTriangulo = new Triangulo();
+		primeiroTriangulo.setBase(6);
+		primeiroTriangulo.setAltura(6);
+
+		double areaPrimeiroTriangulo = primeiroTriangulo.calculaArea();
+		System.out.println("Área triângulo: " + areaPrimeiroTriangulo);
+		
+		System.out.println("Desenho triângulo: ");
+		primeiroTriangulo.desenhar();
+	}
+}

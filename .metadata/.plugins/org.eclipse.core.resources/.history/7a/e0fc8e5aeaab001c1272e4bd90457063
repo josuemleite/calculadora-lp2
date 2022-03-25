@@ -1,0 +1,33 @@
+package geometria;
+
+public class Circulo {
+
+	// Atributos
+	private double raio;
+	
+	// Métodos
+	public void setRaio(double raio) {
+		if (raio > 0) {
+			this.raio = raio;
+		}
+	}
+	
+	public double calculaArea() {
+		double area = Math.PI * raio * raio;
+		
+		return area;
+	}
+	
+	public void desenhar() {
+		for (double i = -raio; i <= raio; i++) {
+			for (double j = -raio; i <= raio; i++) {
+				if (i * i + j * j <= raio * raio) {
+					System.out.print("* ");
+				} else {
+					System.out.print(". ");
+				}
+			}
+			System.out.println();
+		}
+	}
+}
