@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+C:\temp\ws-linguagens\ws-LPII\.metadata\.plugins\org.eclipse.jdt.core
-2508929818.index
-1162845794.index
-1865797976.index
